@@ -12,6 +12,16 @@ $ export OA_API_KEY=sk-...
 $ go run main.go
 ```
 
+## Run the proxy with Docker
+
+```bash
+# Build the image
+$ docker build -t openai-proxy .
+
+# Run the image
+$ docker run -p 8080:8080 -e OA_API_KEY=sk-... openai-proxy
+```
+
 ## Usage
 
 ```bash
