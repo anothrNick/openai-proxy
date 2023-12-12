@@ -84,7 +84,9 @@ func main() {
 			}
 		}()
 
+		// Stream the messages to the client
 		c.Stream(func(w io.Writer) bool {
+			// If there is a message in the stream, send it to the client
 			if msg, ok := <-stream; ok {
 				c.SSEvent("message", msg)
 				return true

@@ -78,11 +78,30 @@ const App = () => {
               style={{
                 display: "flex",
                 gap: "10px",
-                padding: "10px 0px",
+                padding: "15px 0px",
+                whiteSpace: "pre-wrap",
               }}
             >
-              <div>{message.role[0].toUpperCase()}</div>
-              <div>{message.content}</div>
+              <div>
+                <div className={`avatar-${message.role}`}>
+                  {message.role[0].toUpperCase()}
+                </div>
+              </div>
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "8px" }}
+              >
+                <div
+                  style={{
+                    fontWeight: "800",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    color: "#CACACA",
+                  }}
+                >
+                  {message.role}
+                </div>
+                <div>{message.content}</div>
+              </div>
             </div>
           );
         })}
@@ -92,27 +111,33 @@ const App = () => {
               display: "flex",
               gap: "10px",
               padding: "10px 0px",
+              whiteSpace: "pre-wrap",
             }}
           >
-            <div>A</div>
-            <div>{job?.content}</div>
+            <div>
+              <div className="avatar-assistant">A</div>
+            </div>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "8px" }}
+            >
+              <div
+                style={{
+                  fontWeight: "800",
+                  fontSize: "12px",
+                  textTransform: "uppercase",
+                  color: "#CACACA",
+                }}
+              >
+                {job?.role}
+              </div>
+              <div>{job?.content}</div>
+            </div>
           </div>
         )}
       </div>
       <div style={{ display: "flex", padding: "10px 0px" }}>
         <input
           id="message-input"
-          style={{
-            width: "100%",
-            fontSize: "16px",
-            padding: "10px",
-            borderRadius: "4px",
-            borderTopRightRadius: "0px",
-            borderBottomRightRadius: "0px",
-            border: "none",
-            outline: "none",
-            boxShadow: "0px 1px 2px rgba(0,0,0,.4)",
-          }}
           placeholder="enter message..."
           onKeyPress={(event) => {
             if (event.key === "Enter") {
@@ -121,21 +146,7 @@ const App = () => {
           }}
           disabled={processing}
         />
-        <button
-          style={{
-            fontSize: "16px",
-            padding: "10px",
-            borderRadius: "4px",
-            borderTopLeftRadius: "0px",
-            borderBottomLeftRadius: "0px",
-            border: "none",
-            outline: "none",
-            boxShadow: "0px 1px 2px rgba(0,0,0,.4)",
-            cursor: "pointer",
-          }}
-          onClick={onSendMessage}
-          disabled={processing}
-        >
+        <button onClick={onSendMessage} disabled={processing}>
           &#8627;
         </button>
       </div>
