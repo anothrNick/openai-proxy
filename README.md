@@ -66,3 +66,25 @@ data:{"timestamp":1702330536,"content":"?"}
 event:message
 data:{"timestamp":1702330536,"content":""}
 ```
+
+## Demo UI
+
+This project has a very simple demo UI which can be used to test the proxy. The UI is built with React and can be found in the `ui/chat-demo` directory.
+
+```bash
+cd ui/chat-demo && yarn install && yarn start
+...
+Compiled successfully!
+
+You can now view chat-demo in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.238:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+webpack compiled successfully
+```
+
+[<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif" width="400">](https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif)
