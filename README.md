@@ -87,4 +87,4 @@ To create a production build, use yarn build.
 webpack compiled successfully
 ```
 
-[<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif" width="400">](https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif)
+[<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif" >](https://miro.medium.com/v2/resize:fit:640/format:webp/1*BHaB6FlynE7_oa_rw5NTWA.gif)
