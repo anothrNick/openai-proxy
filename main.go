@@ -67,7 +67,7 @@ func main() {
 				// Read chunks from the stream, as they become available
 				response, err := openAIStream.Recv()
 				if errors.Is(err, io.EOF) {
-					fmt.Println("\nStream finished")
+					// fmt.Println("\nStream finished")
 					return
 				}
 
