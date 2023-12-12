@@ -2,6 +2,12 @@
 
 A simple HTTP proxy which allows you to stream responses from Open AI's API. This can be used to secure your API key and to add additional functionality to your API calls.
 
+> Medium Post:
+
+[Streaming Open AI API responses with Server-Side Events and Golang](https://medium.com/@nick.sjostrom12/streaming-openai-api-from-a-proxy-server-8d9e01c0f2f1)
+
+[<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*VMQmzlL8MMYjRoTo2VDm8g.png" width="400">](https://medium.com/@nick.sjostrom12/streaming-openai-api-from-a-proxy-server-8d9e01c0f2f1)
+
 ## Run the proxy
 
 ```bash
